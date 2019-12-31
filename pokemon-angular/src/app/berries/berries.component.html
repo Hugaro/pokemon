@@ -1,0 +1,4 @@
+<app-berry-card *ngFor="let resource of resources"
+  [resorceUrl]="resource.url" >
+</app-berry-card>
+<div class="more" *ngIf="next" (click)="loadResources(next)"> Carregar mais </div>

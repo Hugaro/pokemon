@@ -1,0 +1,52 @@
+<mat-card *ngIf="type && type.pokemon.length > 0" id="{{ type.name }}">
+  <mat-card-header>
+    <mat-card-title class="card-title"> {{ type.name }} </mat-card-title>
+    <mat-card-subtitle [routerLink]="['/generation',  type.generation.name]"> {{ type.generation.name }} </mat-card-subtitle>
+    <mat-card-subtitle> {{ type.pokemon.length }} - pokémon(s)</mat-card-subtitle>
+    <mat-card-subtitle> {{ type.moves.length }} - moves(s)</mat-card-subtitle>
+  </mat-card-header>
+  <!-- <mat-card-content>
+      <div [routerLink]="['/generation',  type.generation.name]"> {{ type.generation.name }} </div>
+      <div> {{ type.pokemon.length }} - pokémon(s)</div>
+      <div> </div>
+  </mat-card-content> -->
+</mat-card> 
+<!-- </mat-card> -->
+<!-- <mat-card *ngIf="type && type.pokemon.length > 0" id="{{ type.name }}">
+    <mat-card-header>
+      <mat-card-title class="card-title"> {{ type.name }} </mat-card-title>
+      <mat-card-subtitle > {{ type.pokemon.length }} - pokémon(s)</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <section>Demage from</section>
+      <div class="damage">
+        <app-type-cell *ngFor="let item of type.damage_relations.no_damage_from" 
+          [typeName]=item.name
+          [damageLevel]=0>
+        </app-type-cell>
+        <app-type-cell *ngFor="let item of type.damage_relations.half_damage_from" 
+          [typeName]=item.name
+          [damageLevel]=0.5>
+        </app-type-cell>
+        <app-type-cell *ngFor="let item of type.damage_relations.double_damage_from" 
+          [typeName]=item.name
+          [damageLevel]=2 >
+        </app-type-cell>
+      </div>
+      <section>Demage to</section>
+      <div class="damage">
+          <app-type-cell *ngFor="let item of type.damage_relations.no_damage_to" 
+            [typeName]=item.name
+            [damageLevel]=0>
+          </app-type-cell>
+          <app-type-cell *ngFor="let item of type.damage_relations.half_damage_to" 
+            [typeName]=item.name
+            [damageLevel]=0.5>
+          </app-type-cell>
+          <app-type-cell *ngFor="let item of type.damage_relations.double_damage_to" 
+            [typeName]=item.name
+            [damageLevel]=2 >
+          </app-type-cell>
+        </div>
+    </mat-card-content>
+</mat-card> -->

@@ -1,0 +1,16 @@
+mat-card-title {
+    cursor: pointer;
+}
+::ng-deep.mat-card-header-text {
+    width: 100%;
+    text-align: center;
+}
+.card {
+    height: 160px;
+
+    &.empty>:first-child {
+        width: 30px;
+        height: 30px;
+        margin: 120px auto;
+    }
+}

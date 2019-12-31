@@ -1,0 +1,21 @@
+section {
+    background: #ccc;
+    border: #ccc solid 1px;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+::ng-deep.mat-card-header-text {
+    width: 100%;
+    text-align: center;
+}
+.card {
+    height: 170px;
+
+    &.empty>:first-child {
+        width: 30px;
+        height: 30px;
+        margin: 120px auto;
+    }
+}

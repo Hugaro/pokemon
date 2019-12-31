@@ -1,0 +1,10 @@
+<mat-card *ngIf="location" class="card" id="{{ location.name }}">
+  <mat-card-header>
+    <mat-card-title class="card-title"> {{ location.name }} </mat-card-title>
+    <mat-card-subtitle > Region of {{ location.region.name }}</mat-card-subtitle>
+    <mat-card-subtitle class="card-title"> {{ location.areas.length }} - Areas </mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
+<mat-card *ngIf="!location" class="card empty">
+<mat-spinner [diameter]="30"></mat-spinner>
+</mat-card>

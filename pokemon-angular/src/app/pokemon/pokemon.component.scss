@@ -1,0 +1,103 @@
+app-stats-card {
+    width: 99%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 2px;
+    float: left;
+}
+app-ability-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+app-move-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+app-pokemon-card {
+    width: 99%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+mat-tab-group {
+    margin-top: -5px;
+    width: 74%;
+}
+::ng-deep.mat-tab-header {    
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    color: black;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+.wrapper {
+    width: 100%;
+    display: inline-block;
+}
+.main-info {
+    margin-left: 0.75%;
+    width: 24%;
+    float: left;
+}
+.tab {
+    z-index: 9999;
+    width: 100%;
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    mat-tab-group {   
+        width: 49%;
+        float: right;
+        margin-left: 0;
+    }
+    .main-info {
+        margin-left: 0.75%;
+        width: 49%;
+        float: left;
+    }
+    app-ability-card {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+    app-move-card {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .main-info {
+        margin-left: 0.75%;
+        width: 99.25%;
+        float: left;
+    }
+    mat-tab-group {   
+        width: 99.25%;
+        margin-right: 0.75%
+    }
+    app-pokemon-card {
+        width: 99.25%;
+    }
+    app-ability-card {
+        width: 99.25%;
+        margin-bottom: -10px;
+    }
+    app-move-card {
+        width: 99.25%;
+        margin-bottom: -10px;
+    }
+    app-stats-card {
+        margin-top: 12px;
+        width: 99.25%;
+        margin-bottom: -12px;
+        border: 1px solid #ccc;
+    }
+}

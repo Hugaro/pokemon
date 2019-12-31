@@ -1,0 +1,31 @@
+
+app-pokemon-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+.more {
+    display: inline-block;
+    width: 98.25%;
+    height: 15px;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background: blue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    app-pokemon-card {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 385px) {
+    app-pokemon-card {
+        width: 99.25%;
+    }
+}

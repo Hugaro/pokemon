@@ -1,0 +1,13 @@
+<mat-card *ngIf="ability" class="card" id="{{ ability.name }}">
+    <mat-card-header>
+      <mat-card-title class="card-title"> {{ ability.name }} </mat-card-title>
+      <mat-card-subtitle > {{ ability.generation.name }} </mat-card-subtitle>
+      <mat-card-subtitle > {{ ability.pokemon.length }} - pokémon(s)</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <mat-card-content>
+      <p *ngIf="ability.effect_entries"> {{ ability.effect_entries[0].effect }}<p>
+    </mat-card-content> -->
+</mat-card>
+<mat-card *ngIf="!ability" class="card empty">
+  <mat-spinner [diameter]="30"></mat-spinner>
+</mat-card>

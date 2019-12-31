@@ -1,0 +1,13 @@
+<app-region-card *ngIf="region"
+  [resource]="region">
+</app-region-card>
+
+<mat-tab-group  *ngIf="region">
+  <mat-tab label="Location">
+    <div class="tab">
+        <app-location-card *ngFor="let item of region.locations" 
+          [resourceUrl]="item.url">
+        </app-location-card>
+    </div>
+  </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,13 @@
+<mat-card *ngIf="machine" tabindex="0" class="card" id="{{ machine.item.name }}">
+  <mat-card-header>
+      <img mat-card-avatar src="{{ machine.item.sprites.default }}" class="header-image" />
+    <mat-card-title class="card-title"> {{ machine.item.name }} </mat-card-title>
+    <mat-card-subtitle class="card-title"> {{ machine.item.category.name }} </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p> {{ machine.item.effect_entries[0].effect }}<p>
+  </mat-card-content>
+</mat-card>
+<mat-card *ngIf="!machine" class="card empty">
+<mat-spinner [diameter]="30"></mat-spinner>
+</mat-card>

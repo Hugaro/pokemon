@@ -1,0 +1,14 @@
+<mat-card *ngIf="area" class="card" id="{{ area.name }}">
+  <mat-card-header>
+    <mat-card-title class="card-title"> {{ area.name }} </mat-card-title>
+    <mat-card-subtitle > {{ area.pokemon_encounters.length }} - Pokemons</mat-card-subtitle>
+  </mat-card-header>
+  <!-- <mat-card-content>
+    <section>Versions</section>
+    <app-abilities-cell *ngFor="let method of area.encounter_method_rates" [abilityName]="method.encounter_method.name"></app-abilities-cell>
+
+  </mat-card-content> -->
+</mat-card>
+<mat-card *ngIf="!area" class="card empty">
+<mat-spinner [diameter]="30"></mat-spinner>
+</mat-card>

@@ -1,0 +1,38 @@
+<div class="main-info">
+  <div class="wrapper">
+    <app-pokemon-card *ngIf="pokemon"
+      [resourceObj]="pokemon" >
+    </app-pokemon-card>
+    <div *ngIf="!isMobile">
+      <app-stats-card *ngFor="let item of pokemon.stats"
+        [name]="item.stat.name"
+        [value]="item.base_stat">
+      </app-stats-card>
+    </div>
+  </div>
+</div>
+
+<mat-tab-group  *ngIf="pokemon">
+  <mat-tab label="Abilities">
+    <div class="tab">
+        <app-ability-card *ngFor="let item of pokemon.abilities" 
+          [resourceUrl]="item.ability.url">
+      </app-ability-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="Moves">
+    <div class="tab">
+      <app-move-card *ngFor="let item of pokemon.moves" 
+        [resourceUrl]="item.move.url">
+      </app-move-card>
+    </div>
+  </mat-tab>
+  <mat-tab *ngIf="isMobile" label="Stats">
+    <div class="tab">
+      <app-stats-card *ngFor="let item of pokemon.stats"
+        [name]="item.stat.name"
+        [value]="item.base_stat">
+      </app-stats-card>
+    </div>
+  </mat-tab>
+</mat-tab-group>

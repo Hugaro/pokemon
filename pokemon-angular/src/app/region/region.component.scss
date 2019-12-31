@@ -1,0 +1,27 @@
+app-region-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+app-location-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+mat-tab-group {
+    margin-top: -5px;
+    width: 74%;
+}
+::ng-deep.mat-tab-header {    
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    color: black;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}

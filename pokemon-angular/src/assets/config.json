@@ -1,0 +1,17 @@
+{
+    "page_size": 100,
+    "offset": 0,
+    "url": {
+        "pokemon": "https://pokeapi.co/api/v2/pokemon",
+        "berry":   "https://pokeapi.co/api/v2/berry",
+        "ability": "https://pokeapi.co/api/v2/ability",
+        "type":    "https://pokeapi.co/api/v2/type",
+        "stat":    "https://pokeapi.co/api/v2/stat",
+        "machine": "https://pokeapi.co/api/v2/machine",
+        "move":    "https://pokeapi.co/api/v2/move",
+        "generation": "https://pokeapi.co/api/v2/generation",
+        "region":     "https://pokeapi.co/api/v2/region",
+        "location":   "https://pokeapi.co/api/v2/location",
+        "area":       "https://pokeapi.co/api/v2/location-area"
+    }
+}

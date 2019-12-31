@@ -1,0 +1,17 @@
+app-ability-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+@media screen and (max-width: 768px) {
+    app-ability-card {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 385px) {
+    app-ability-card {
+        width: 99.25%;
+    }
+}

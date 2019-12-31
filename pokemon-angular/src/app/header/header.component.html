@@ -1,0 +1,19 @@
+<img class="img-title" src="../../assets/img/pokemon-logo.png"/>
+<img class="img-title" src="../../assets/img/ash.png"/>
+
+<div id="menu-header">
+    <button mat-icon-button  [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/pokemons">Pokémons</button>
+        <button mat-menu-item routerLink="/types">Types</button>
+        <button mat-menu-item routerLink="/abilities">Abilities</button>
+        <button mat-menu-item routerLink="/moves">Moves</button>
+        <button mat-menu-item routerLink="/generations">Generations</button>
+        <button mat-menu-item routerLink="/regions">Regions</button>
+        <button mat-menu-item routerLink="/locations">Locations</button>
+        <button mat-menu-item routerLink="/areas">Areas</button>
+        <button mat-menu-item routerLink="/items">Items</button>
+    </mat-menu>
+  </div>

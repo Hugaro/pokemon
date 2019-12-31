@@ -1,0 +1,49 @@
+<!-- <div class="main-info">
+  <div class="wrapper"> -->
+    <app-generation-card *ngIf="resourceUrl"
+      [resourceUrl]="resourceUrl">
+    </app-generation-card>
+
+    <!-- <app-region-card *ngIf="regionUrl"
+      [resourceUrl]="regionUrl">
+    </app-region-card>
+  </div>
+</div> -->
+<!-- <app-region-card *ngIf="regionUrl"
+  [resourceUrl]="regionUrl">
+</app-region-card> -->
+
+ <!-- <div class="main-info">
+  <div class="wrapper">
+     <app-generation-card *ngIf="resourceUrl"
+      [resourceUrl]="resourceUrl">
+    </app-generation-card>
+    <app-region-card *ngIf="regionUrl"
+      [resourceUrl]="regionUrl">
+    </app-region-card>
+  </div>
+</div>  -->
+
+<mat-tab-group *ngIf="generation">
+  <mat-tab label="Pokemons">
+    <div class="tab">
+      <app-pokemon-cell *ngFor="let pokemon of generation.pokemon_species"
+        [resourceUrl]="pokemon.url">
+      </app-pokemon-cell>
+    </div>
+  </mat-tab>
+  <mat-tab label="Moves">
+    <div class="tab">
+      <app-move-card *ngFor="let move of generation.moves"
+        [resourceUrl]="move.url">
+      </app-move-card>
+    </div>
+  </mat-tab>
+  <!-- <mat-tab label="Types">
+    <div class="tab">
+      <app-type-card *ngFor="let type of generation.types"
+        [resourceUrl]="type.url">
+      </app-type-card>
+    </div>
+  </mat-tab> -->
+</mat-tab-group>

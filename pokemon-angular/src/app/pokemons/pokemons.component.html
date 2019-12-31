@@ -1,0 +1,4 @@
+<app-pokemon-card *ngFor="let resource of resources"
+  [resourceUrl]="resource.url" >
+</app-pokemon-card>
+<div class="more" *ngIf="next" (click)="loadResources(next)"> Carregar mais </div>

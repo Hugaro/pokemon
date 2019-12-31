@@ -1,0 +1,13 @@
+::ng-deep.mat-card-header-text {
+    width: 100%;
+    text-align: center;
+}
+.card {
+    height: 45px;
+
+    &.empty>:first-child {
+        width: 30px;
+        height: 45px;
+        margin: 120px auto;
+    }
+}

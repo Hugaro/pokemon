@@ -1,0 +1,12 @@
+app-region-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+@media screen and (max-width: 385px) {
+    app-region-card {
+        width: 99.25%;
+    }   
+}

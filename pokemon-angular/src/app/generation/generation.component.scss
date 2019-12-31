@@ -1,0 +1,155 @@
+// app-pokemon-cell {
+//     width: 32.25%;
+//     padding: 0;
+//     margin-left: 0.75%;
+//     margin-top: 12px;
+//     float: left;
+// }
+// app-move-card {
+//     width: 24%;
+//     padding: 0;
+//     margin-left: 0.75%;
+//     margin-top: 12px;
+//     float: left;
+// }
+// app-type-card {
+//     width: 24%;
+//     padding: 0;
+//     margin-left: 0.75%;
+//     margin-top: 12px;
+//     float: left;
+// }
+
+// app-generation-card {
+//     width: 100%;
+//     padding: 0;
+//     margin-bottom: 12px;
+//     float: left;
+// }
+// mat-card-title {
+//     cursor: pointer;
+// }
+// ::ng-deep.mat-card-header-text {
+//     width: 100%;
+//     text-align: center;
+// }
+// ::ng-deep.mat-tab-header {    
+//     background-color: white;
+//     border-radius: 4px;
+//     width: 98.25%;
+//     margin-left: 0.75%;
+//     margin-top: 12px;
+//     color: black;
+//     box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+// }
+
+// .tab {
+//     z-index: 9999;
+//     width: 100%;
+//     display: inline-block;
+// }
+// .card {
+//     height: 240px;
+
+//     &.empty>:first-child {
+//         width: 30px;
+//         height: 30px;
+//         margin: 120px auto;
+//     }
+// }
+app-pokemon-cell {
+    width: 32.2%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+app-move-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+app-type-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+app-generation-card {
+    width: 24%;
+    padding: 0;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    float: left;
+}
+// app-region-card {
+//     width: 100%;
+//     padding: 0;
+//     margin-top: 12px;
+//     float: left;
+// }
+mat-tab-group {   
+    width: 74%;
+}
+// .wrapper {
+//     width: 100%;
+//     display: inline-block;
+// }
+// .main-info {
+//     // margin-top: 12px;
+//     margin-left: 0.75%;
+//     width: 24%;
+//     float: left;
+// }
+::ng-deep.mat-tab-header {    
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    margin-left: 0.75%;
+    margin-top: 12px;
+    color: black;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+.tab {
+    z-index: 9999;
+    width: 100%;
+    display: inline-block;
+}
+@media screen and (max-width: 768px) {
+    mat-tab-group {   
+        width: 49%;
+        float: right;
+        margin-left: 0;
+    }
+    app-generation-card {
+        width: 49%;
+    }
+    app-pokemon-cell {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+    app-move-card {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+}
+@media screen and (max-width: 385px) {
+    mat-tab-group {   
+        width: 99.25%;
+        margin-right: 0.75%
+    }
+    app-generation-card {
+        width: 99.25%;
+    }
+    app-pokemon-cell {
+        width: 99.25%;
+        margin-bottom: -10px;
+    }
+    app-move-card {
+        width: 99.25%;
+        margin-bottom: -10px;
+    }
+}

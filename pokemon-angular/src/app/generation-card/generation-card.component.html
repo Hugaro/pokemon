@@ -1,0 +1,27 @@
+<mat-card *ngIf="generation" class="card">
+  <mat-card-header>
+    <mat-card-title class="card-title" [routerLink]="['/generation',  generation.name]">{{ generation.name }} </mat-card-title>
+    <mat-card-subtitle > Region of {{ generation.main_region.name }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div style="padding:1%; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc; width:98%">
+      <span>  New pokémon species  </span>
+      <span style="float:right"> {{ generation.pokemon_species.length }} </span>
+    </div>
+    <div style="padding:1%; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc; width:98%">
+      <span>  New pokémon types  </span>
+      <span style="float:right"> {{ generation.types.length }} </span>
+    </div>
+    <div style="padding:1%; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc; width:98%">
+      <span> New pokémon moves  </span>
+      <span style="float:right"> {{ generation.moves.length }} </span>
+    </div>
+    <div style="padding:1%; border-top: 1px solid #ccc;border-bottom: 1px solid #ccc; width:98%">
+      <span> Number of version groups  </span>
+      <span style="float:right"> {{ generation.version_groups.length }} </span>
+    </div>
+    </mat-card-content>
+</mat-card>
+<mat-card *ngIf="!generation" class="card empty">
+  <mat-spinner [diameter]="30"></mat-spinner>
+</mat-card>
